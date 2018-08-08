@@ -1,26 +1,58 @@
 element.style {
 }
-
+html {
+    font-size: 18px;
+    background-color: white;
+}
 .company {
     background-color: black;
     color: white;
 }
 @media only screen and (max-width: 1024px)
-body {
+{
+  body {
     font-size: 16px;
+    }
+  nav .container {
+    display: none
+  }
+  nav .mobile-nav {
+    display: block;
+    text-align: center;
+  }
 }
+
+@media only screen and (max-width: 470px)
+{
+  body {
+    font-size: 10px;
+    }
+  nav .container {
+    display: none
+  }
+  nav .mobile-nav {
+    display: none;
+    }
+}
+
+
+nav .mobile-nav {
+  display: none
+}
+/* add .nav .container hidden
+and .nav .mobile-nav container not hidden
+*/
 body {
     font-family: Helvetica, sans-serif;
     line-height: 1.4em;
-}
-html {
-    font-size: 18px;
-    background-color: white;
 }
 .company .container {
     display: flex;
     align-items: center;
     padding: 12px 0 12px 0.5em;
+}
+div {
+    display: block;
 }
 .container {
     max-width: 960px;
@@ -43,6 +75,54 @@ img {
 nav {
     background-color: firebrick;
     color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75em 0;
+    list-style: none;
+}
+
+.product-image {
+    border: 4px solid black;
+    padding: 2em 0;
+    height: 9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products,
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.product {
+  width: 30%;
+}
+
+.product-image img {
+    max-width: 8em;
+}
+.description {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+.info .title {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 1em 2em;
+}
+.info {
+    width: 35%;
 }
 footer {
     background-color: black;
